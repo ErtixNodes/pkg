@@ -13,6 +13,11 @@ license="custom"
 # source="https://www.rarlab.com/rar/unrarsrc-$pkgver.tar.gz" # disable source
 builddir="$srcdir/"
 
+prepare() {
+	mkdir $srcdir -p
+	mkdir $builddir -p
+}
+
 build() {
 	echo "Building at $(pwd)"
 }
