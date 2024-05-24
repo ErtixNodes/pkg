@@ -1,1 +1,1 @@
-find . -type d repo -exec echo 'found {}!'  \;
+find ./repo -type d -exec echo 'found {}!'  \;
