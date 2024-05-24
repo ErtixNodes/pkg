@@ -24,8 +24,8 @@ jobs:
 
       - name: Setup keys
         run: |
-          cp build.rsa.pub /home/foo/.abuild/
-          cp build.rsa.pub /etc/apk/keys/
+          cp ./build.rsa.pub /home/foo/.abuild/
+          cp ./build.rsa.pub /etc/apk/keys/
           echo "${{ secrets.APORTS_PRIVATE_KEY }}" > /home/foo/.abuild/build.rsa
           echo "PACKAGER_PRIVKEY=/home/foo/.abuild/build.rsa" > /home/foo/.abuild/abuild.conf
 
