@@ -9,7 +9,8 @@ url="https://ertixnodes.xyz"
 arch="all"
 options=""
 license="custom"
-# subpackages="" # None
+subpackages=""
+makedepends=""
 # source="https://www.rarlab.com/rar/unrarsrc-$pkgver.tar.gz" # disable source
 
 build() {
