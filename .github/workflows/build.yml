@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Setup deps
         run: |
-          apk add aports-build
+          apk add aports-build bash
           adduser --ingroup abuild --disabled-password foo
           mkdir /home/foo/.abuild
 
