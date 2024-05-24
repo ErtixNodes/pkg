@@ -11,10 +11,10 @@ options="!check" # no test suite
 license="custom"
 # subpackages="" # None
 # source="https://www.rarlab.com/rar/unrarsrc-$pkgver.tar.gz" # disable source
-builddir="$srcdir/$pkgname"
+builddir="$srcdir/"
 
 build() {
-	echo "Building"
+	echo "Building at $(pwd)"
 }
 
 package() {
