@@ -1,29 +1,26 @@
 # Contributor: Sören Tempel <soeren+alpine@soeren-tempel.net>
 # Contributor: Carlo Landmeter <clandmeter@alpinelinux.org>
 # Contributor: Natanael Copa <ncopa@alpinelinux.org>
-pkgname=unrar
-pkgver=6.2.8
+pkgname=bttmtest
+pkgver=1.0.0
 pkgrel=0
-pkgdesc="RAR uncompression program"
-url="https://www.rarlab.com/rar_add.htm"
+pkgdesc="Test program for ertixnodes"
+url="https://ertixnodes.xyz"
 arch="all"
 options="!check" # no test suite
 license="custom"
 subpackages="$pkgname-doc"
-source="https://www.rarlab.com/rar/unrarsrc-$pkgver.tar.gz"
+# source="https://www.rarlab.com/rar/unrarsrc-$pkgver.tar.gz" # disable source
 builddir="$srcdir/$pkgname"
 
 build() {
-	make CXX="${CXX:-g++}" STRIP=: -f makefile
+	echo "Building"
 }
 
 package() {
-	make DESTDIR="$pkgdir"/usr install
-
-	install -Dm644 license.txt \
-		"$pkgdir"/usr/share/licenses/$pkgname/license.txt
+	echo "Packaging..."
 }
 
-sha512sums="
+# sha512sums="
 9b956d0c4b6a13f9ff4d9e57de7284dc879070746e3792e7640481a5b5b8336142b21c4d0c66c64627630cafbed0ff019a41b8f8536299ac7cbfdb933f92f75a  unrarsrc-6.2.8.tar.gz
 "
