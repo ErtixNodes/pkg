@@ -32,6 +32,9 @@ jobs:
       - name: Change ownership to build
         run: chown -R foo $(pwd)
 
+      - name: test
+        run: chown -R foo /home/foo
+
       - name: Build repo
         run: su foo -c 'buildrepo --destdir $(pwd) --aports $(pwd) --purge repo'
 
