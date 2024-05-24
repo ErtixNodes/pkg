@@ -17,6 +17,7 @@ prepare() {
 	default_prepare
 	mkdir $srcdir -p
 	mkdir $builddir -p
+	mkdir $pkgdir -p
 }
 
 build() {
