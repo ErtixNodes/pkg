@@ -24,10 +24,10 @@ jobs:
 
       - name: Setup keys
         run: |
-          cp hi@fabricio.dev-63f73b9a.rsa.pub /home/foo/.abuild/
-          cp hi@fabricio.dev-63f73b9a.rsa.pub /etc/apk/keys/
-          echo "${{ secrets.APORTS_PRIVATE_KEY }}" > /home/foo/.abuild/hi@fabricio.dev-63f73b9a.rsa
-          echo "PACKAGER_PRIVKEY=/home/foo/.abuild/hi@fabricio.dev-63f73b9a.rsa" > /home/foo/.abuild/abuild.conf
+          cp build.rsa.pub /home/foo/.abuild/
+          cp build.rsa.pub /etc/apk/keys/
+          echo "${{ secrets.APORTS_PRIVATE_KEY }}" > /home/foo/.abuild/build.rsa
+          echo "PACKAGER_PRIVKEY=/home/foo/.abuild/build.rsa" > /home/foo/.abuild/abuild.conf
 
       - name: Change ownership to build
         run: chown -R foo $(pwd)
