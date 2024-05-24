@@ -24,10 +24,10 @@ jobs:
 
       - name: Setup keys
         run: |
-          cp ./build@bttm.bttm-6650b009.rsa.pub /home/foo/.abuild/
-          cp ./build@bttm.bttm-6650b009.rsa.pub /etc/apk/keys/
-          echo "${{ secrets.APORTS_PRIVATE_KEY }}" > /home/foo/.abuild/build@bttm.bttm-6650b009.rsa
-          echo "PACKAGER_PRIVKEY=/home/foo/.abuild/build@bttm.bttm-6650b009.rsa" > /home/foo/.abuild/abuild.conf
+          cp ./bttm-6650b009.rsa.pub /home/foo/.abuild/
+          cp ./bttm-6650b009.rsa.pub /etc/apk/keys/
+          echo "${{ secrets.APORTS_PRIVATE_KEY }}" > /home/foo/.abuild/bttm-6650b009.rsa
+          echo "PACKAGER_PRIVKEY=/home/foo/.abuild/bttm-6650b009.rsa" > /home/foo/.abuild/abuild.conf
 
       - name: Change ownership to build
         run: chown -R foo $(pwd)
