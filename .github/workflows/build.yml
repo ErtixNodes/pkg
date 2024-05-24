@@ -2,7 +2,7 @@ name: Build
 
 on:
   push:
-    paths: ["repo/**", "!repo/x86_64/**"]
+    paths: ["repo/**", "!repo/x86_64/**", ".github/workflows/*"]
   workflow_dispatch:
 
 jobs:
