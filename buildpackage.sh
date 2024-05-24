@@ -1,0 +1,3 @@
+echo Building $1...
+sleep 3
+echo Done building $1!
