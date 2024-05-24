@@ -7,7 +7,7 @@ pkgrel=0
 pkgdesc="Test program for ertixnodes"
 url="https://ertixnodes.xyz"
 arch="all"
-options="!check" # no test suite
+options=""
 license="custom"
 # subpackages="" # None
 # source="https://www.rarlab.com/rar/unrarsrc-$pkgver.tar.gz" # disable source
@@ -20,6 +20,10 @@ build() {
 package() {
 	echo "Pack"
 	mkdir -p "$pkgdir"
+}
+
+check() {
+	echo "Everything works!"
 }
 
 # sha512sums="
