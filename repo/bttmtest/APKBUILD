@@ -11,9 +11,10 @@ options="!check" # no test suite
 license="custom"
 # subpackages="" # None
 # source="https://www.rarlab.com/rar/unrarsrc-$pkgver.tar.gz" # disable source
-builddir="$srcdir/"
+builddir="" # Empty build dir = current dir
 
 prepare() {
+	default_prepare
 	mkdir $srcdir -p
 	mkdir $builddir -p
 }
