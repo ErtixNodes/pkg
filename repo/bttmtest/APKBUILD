@@ -23,7 +23,8 @@ prepare() {
 }
 
 build() {
-	echo "Building at $(pwd)"
+	echo "Building at $(pwd) with $pkgdir"
+	mkdir $pkgdir -p
 }
 
 package() {
