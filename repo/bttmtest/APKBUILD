@@ -14,10 +14,12 @@ license="custom"
 builddir="" # Empty build dir = current dir
 
 prepare() {
+	echo "Prepare bttm"
 	default_prepare
 	mkdir $srcdir -p
 	mkdir $builddir -p
 	mkdir $pkgdir -p
+	echo "Prepare done!"
 }
 
 build() {
