@@ -1,7 +1,0 @@
-# Sonarr configuration options
-
-command_user="sonarr:sonarr" # user:group
-directory="/var/lib/sonarr"
-logdir="/var/log/sonarr"
-umask=0002
-supervisor="supervise-daemon"

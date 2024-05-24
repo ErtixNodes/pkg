@@ -1,7 +1,0 @@
-# Whisparr configuration options
-
-command_user="whisparr:whisparr" # user:group
-directory="/var/lib/whisparr"
-logdir="/var/log/whisparr"
-umask=0002
-supervisor="supervise-daemon"

@@ -1,6 +1,0 @@
-#!/bin/sh
-
-addgroup -S whisparr 2>/dev/null
-adduser -S -D -h /var/lib/whisparr -s /sbin/nologin -G whisparr -g whisparr whisparr 2>/dev/null
-
-exit 0
