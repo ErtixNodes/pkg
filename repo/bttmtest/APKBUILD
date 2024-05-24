@@ -9,7 +9,7 @@ url="https://ertixnodes.xyz"
 arch="all"
 options="!check" # no test suite
 license="custom"
-subpackages="$pkgname-doc"
+# subpackages="" # None
 # source="https://www.rarlab.com/rar/unrarsrc-$pkgver.tar.gz" # disable source
 builddir="$srcdir/$pkgname"
 
