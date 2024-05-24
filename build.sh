@@ -1,1 +1,1 @@
-find ./repo -type d -exec echo 'found {}!'  \;
+find ./repo -type d -exec bash buildpackage.sh \;
