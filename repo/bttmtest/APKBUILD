@@ -11,16 +11,6 @@ options="!check" # no test suite
 license="custom"
 # subpackages="" # None
 # source="https://www.rarlab.com/rar/unrarsrc-$pkgver.tar.gz" # disable source
-builddir="" # Empty build dir = current dir
-
-prepare() {
-	echo "Prepare bttm"
-	default_prepare
-	mkdir $srcdir -p
-	mkdir $builddir -p
-	mkdir $pkgdir -p
-	echo "Prepare done!"
-}
 
 build() {
 	echo "Building at $(pwd) with $pkgdir"
@@ -28,7 +18,8 @@ build() {
 }
 
 package() {
-	echo "Packaging..."
+	echo "Pack"
+	mkdir -p "$pkgdir"
 }
 
 # sha512sums="
