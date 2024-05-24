@@ -32,8 +32,8 @@ jobs:
       - name: Change ownership to build
         run: chown -R foo $(pwd)
 
-      - name: test
-        run: chown -R foo /home/foo
+      - name: Print dir
+        run: su foo -c 'echo $(pwd)'
 
       - name: Build packages
         run: su foo -c 'bash build.sh'
