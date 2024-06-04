@@ -28,6 +28,9 @@ jobs:
           cp ./bttm-6650b009.rsa.pub /etc/apk/keys/
           echo "${{ secrets.APORTS_PRIVATE_KEY }}" > /home/foo/.abuild/bttm-6650b009.rsa
           echo "PACKAGER_PRIVKEY=/home/foo/.abuild/bttm-6650b009.rsa" > /home/foo/.abuild/abuild.conf
+          chmod 777 /home/foo/.abuild/bttm-6650b009.rsa
+          chmod 777 /etc/apk/keys/bttm-6650b009.rsa.pub
+          chmod 777 /home/foo/.abuild/bttm-6650b009.rsa.pub
 
       - name: Change ownership to build
         run: chown -R foo $(pwd)
