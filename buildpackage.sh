@@ -8,6 +8,7 @@ else
     echo "Processing directory: $1"
 
     cd "$1"
+    echo "$(pwd)"
     abuild -P $dir build
 
     echo "Built $1!"
