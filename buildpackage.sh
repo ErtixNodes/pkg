@@ -10,6 +10,8 @@ else
     cd "$1"
     echo "$(pwd)"
     abuild -P $dir -v build
+
+    find $(pwd)/../../
     abuild -P $dir -v index
 
     echo "Built $1!"
