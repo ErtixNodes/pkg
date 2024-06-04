@@ -8,4 +8,4 @@ echo "- Build finished!"
 
 dir="$(pwd)"
 
-abuild -P $dir index
+abuild -P $dir listpkg
