@@ -31,6 +31,7 @@ jobs:
           chmod 777 /home/foo/.abuild/bttm-6650b009.rsa
           chmod 777 /etc/apk/keys/bttm-6650b009.rsa.pub
           chmod 777 /home/foo/.abuild/bttm-6650b009.rsa.pub
+          chmod -R 777 /home/foo/
 
       - name: Change ownership to build
         run: chown -R foo $(pwd)
