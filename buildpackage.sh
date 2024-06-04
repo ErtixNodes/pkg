@@ -10,7 +10,7 @@ else
     cd "$1"
     echo "$(pwd)"
     abuild -P $dir -v build
-    abuild -P $dir -k ~/.abuild/bttm-6650b009.rsa -v index
+    abuild -P $dir -v index
 
     echo "Built $1!"
 fi
