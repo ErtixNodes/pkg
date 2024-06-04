@@ -9,8 +9,9 @@ else
 
     cd "$1"
     echo "$(pwd)"
-    abuild -P $dir -v build
+    abuild -P $dir build
 
+    abuild-sign $(pwd)/../
     find $(pwd)/../../
     abuild -P $dir -v index
 
