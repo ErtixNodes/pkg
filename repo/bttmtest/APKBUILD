@@ -15,12 +15,10 @@ makedepends=""
 
 build() {
 	echo "Building at $(pwd) with $pkgdir"
-	mkdir $pkgdir -p
 }
 
 package() {
 	echo "Pack"
-	mkdir -p "$pkgdir"
 }
 
 check() {
