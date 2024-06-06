@@ -5,6 +5,9 @@ on:
     paths: ["repo/**", "!repo/x86_64/**", ".github/workflows/*", "build.sh", "buildpackage.sh"]
   workflow_dispatch:
 
+permissions:
+  contents: write
+  
 jobs:
   build:
     runs-on: ubuntu-latest
