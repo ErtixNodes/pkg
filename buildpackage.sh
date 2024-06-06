@@ -1,7 +1,7 @@
 #!/bin/bash
 
 dir=$(pwd)
-dest="$dir/repo"
+dest="$dir"
 
 if [ "$1" == "./repo" ] || [ "$1" == "./repo/x86_64" ]; then
     echo "Ignoring $1...."
