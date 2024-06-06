@@ -1,80 +1,97 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>ErtixNodes Packages | pkg</title>
-<meta name="generator" content="Jekyll v3.9.5" />
-<meta property="og:title" content="ErtixNodes Packages" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="[test] My alpine aports repo" />
-<meta property="og:description" content="[test] My alpine aports repo" />
-<link rel="canonical" href="https://ertixnodes.github.io/pkg/" />
-<meta property="og:url" content="https://ertixnodes.github.io/pkg/" />
-<meta property="og:site_name" content="pkg" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="ErtixNodes Packages" />
-<script type="application/ld+json">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+    <title>ErtixNodes Packages | pkg</title>
+    <meta name="generator" content="Jekyll v3.9.5" />
+    <meta property="og:title" content="ErtixNodes Packages" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="description" content="[test] My alpine aports repo" />
+    <meta property="og:description" content="[test] My alpine aports repo" />
+    <link rel="canonical" href="https://ertixnodes.github.io/pkg/" />
+    <meta property="og:url" content="https://ertixnodes.github.io/pkg/" />
+    <meta property="og:site_name" content="pkg" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:title" content="ErtixNodes Packages" />
+    <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","description":"[test] My alpine aports repo","headline":"ErtixNodes Packages","name":"pkg","url":"https://ertixnodes.github.io/pkg/"}</script>
-<!-- End Jekyll SEO tag -->
+    <!-- End Jekyll SEO tag -->
 
-<script src="https://unpkg.com/htmx.org@1.9.12" integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.12"
+        integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2"
+        crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="/pkg/assets/css/style.css?v=8e273055626e7cf2bdab0f27a2bbe73814d4df4b">
     <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
-<!-- Setup Google Analytics -->
+    <!-- Setup Google Analytics -->
 
 
 
-<!-- You can set your favicon here -->
-<!-- link rel="shortcut icon" type="image/x-icon" href="/pkg/favicon.ico" -->
+    <!-- You can set your favicon here -->
+    <!-- link rel="shortcut icon" type="image/x-icon" href="/pkg/favicon.ico" -->
 
-<!-- end custom head snippets -->
+    <!-- end custom head snippets -->
 
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container-lg px-3 my-5 markdown-body">
-      
-      <h1><a href="https://ertixnodes.github.io/pkg/">pkg</a></h1>
-      
 
-      <h1 id="ertixnodes-packages">ErtixNodes Packages</h1>
-<p>Custom packages for ertixnodes</p>
+        <h1><a href="https://ertixnodes.github.io/pkg/">pkg</a></h1>
 
-<h2 id="instructions">Instructions</h2>
 
-<ol>
-  <li>
-    <p>Import the sign key</p>
+        <h1 id="ertixnodes-packages">ErtixNodes Packages</h1>
+        <p>Custom packages for ertixnodes</p>
 
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget <span class="nt">-P</span> /etc/apk/keys https://ertixnodes.github.io/pkg/info@bastothemax.nl-666178c1.rsa.pub
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>Enable the repo, testing and edge releases <em><a href="https://wiki.alpinelinux.org/wiki/Edge">assuming you know what you are doing</a></em></p>
+        <h2 id="instructions">Instructions</h2>
 
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"https://ertixnodes.github.io/pkg/repo"</span> <span class="o">&gt;&gt;</span> /etc/apk/repositories
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>Install the packages you want:</p>
+        <ol>
+            <li>
+                <p>Import the sign key</p>
 
-    <div hx-get="./packagelist.txt" hx-swap="innerHTML" hx-trigger="load">
-        Loading...
+                <div class="language-bash highlighter-rouge">
+                    <div class="highlight">
+                        <pre class="highlight"><code>wget <span class="nt">-P</span> /etc/apk/keys https://ertixnodes.github.io/pkg/info@bastothemax.nl-666178c1.rsa.pub
+</code></pre>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p>Enable the repo, testing and edge releases <em><a
+                            href="https://wiki.alpinelinux.org/wiki/Edge">assuming you know what you are doing</a></em>
+                </p>
+
+                <div class="language-bash highlighter-rouge">
+                    <div class="highlight">
+                        <pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"https://ertixnodes.github.io/pkg/repo"</span> <span class="o">&gt;&gt;</span> /etc/apk/repositories
+</code></pre>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p>Install the packages you want:</p>
+
+                <pre>
+                    <div hx-get="./packagelist.txt" hx-swap="innerHTML" hx-trigger="load">
+                        Loading...
+                    </div>
+                </pre>
+            </li>
+        </ol>
+
+
+
     </div>
-  </li>
-</ol>
-
-
-      
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"
+        integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
     <script>anchors.add();</script>
-  </body>
+</body>
+
 </html>
