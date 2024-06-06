@@ -32,5 +32,5 @@ else
     echo "cd back to $dir"
 
     echo "Version: $name"
-    echo $name > packageverion.txt
+    echo $name > packageversion.txt
 fi
