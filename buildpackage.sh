@@ -2,6 +2,8 @@
 
 dir=$(pwd)
 
+echo "Now in $dir!"
+
 if [ "$1" == "./repo" ] || [ "$1" == "./repo/x86_64" ]; then
     echo "Ignoring $1...."
 else
