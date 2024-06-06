@@ -18,3 +18,5 @@ Custom packages for ertixnodes
 3.  Install the packages you want:
 
     - `bttmtest`
+
+    [All packages](./packagelist.txt)
