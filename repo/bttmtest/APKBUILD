@@ -1,6 +1,7 @@
+# Maintainer: ErtixNodes <info@bastothemax.nl>
 pkgname=bttmtest
 pkgver=1.0.0
-pkgrel=0
+pkgrel=1
 pkgdesc="Test program for ertixnodes"
 url="https://ertixnodes.xyz"
 arch="all"
@@ -8,15 +9,10 @@ options="!check"
 license="custom"
 
 build() {
-	echo "Building at $(pwd) with $pkgdir"
-
-	echo "This is just a sample package used for testing. Please refer to the other APKBUILD files for the real packages!"
+	# Emptu
 }
 package() {
-	echo "Package (not needed)"
-
 	mkdir -p "$pkgdir"
-	echo "Pkdir created"
 }
 
 install="$pkgname.pre-install $pkgname.pre-upgrade $pkgname.post-upgrade
