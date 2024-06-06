@@ -1,10 +1,6 @@
 # ErtixNodes Packages
 Custom packages for ertixnodes
 
-## What is this
-
-Repository with aports that I use and isnt accept in Alpine Testing repo due guidelines.
-
 ## Instructions
 
 1.  Import the sign key
