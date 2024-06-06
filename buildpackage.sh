@@ -1,6 +1,7 @@
 #!/bin/bash
 
 dir=$(pwd)
+dest="$dir/repo"
 
 if [ "$1" == "./repo" ] || [ "$1" == "./repo/x86_64" ]; then
     echo "Ignoring $1...."
@@ -10,7 +11,7 @@ else
 
     cd $1
     
-    abuild -P $dir/repo build
+    abuild -P $dest build
     echo "build done"
 
     echo "Apk:"
@@ -18,9 +19,9 @@ else
     # abuild-sign -k ~/.abuild/info@bastothemax.nl-666178c1.rsa -p ~/.abuild/info@bastothemax.nl-666178c1.rsa.pub $(pwd)/../
 
     echo "list pkg"
-    abuild -P $dir listpkg
+    abuild -P $dest listpkg
     
-    abuild -P $dir index
+    abuild -P $dest index
     echo "index done"
 
     echo "Built $1!"
