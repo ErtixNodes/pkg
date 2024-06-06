@@ -9,7 +9,7 @@ options="!check"
 license="custom"
 
 build() {
-	# Emptu
+	echo "Build done!"
 }
 package() {
 	mkdir -p "$pkgdir"
