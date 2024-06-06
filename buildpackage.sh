@@ -14,7 +14,7 @@ else
     echo "build done"
 
     echo "dir:"
-    ls -la
+    ls -la $dir
     # abuild-sign -k ~/.abuild/info@bastothemax.nl-666178c1.rsa -p ~/.abuild/info@bastothemax.nl-666178c1.rsa.pub $(pwd)/../
 
     echo "list pkg"
