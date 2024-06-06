@@ -9,9 +9,10 @@ license="custom"
 
 build() {
 	echo "Building at $(pwd) with $pkgdir"
-	mkdir -p "$pkgdir"
-	echo "Pkdir created"
 }
 package() {
 	echo "Package (not needed)"
+
+	mkdir -p "$pkgdir"
+	echo "Pkdir created"
 }
