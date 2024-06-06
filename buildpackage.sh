@@ -8,8 +8,14 @@ else
     echo "Processing directory: $1"
     abuild -P $dir build
 
-    abuild-sign -k ~/.abuild/info@bastothemax.nl-666178c1.rsa -p ~/.abuild/info@bastothemax.nl-666178c1.rsa.pub $(pwd)/../
-    abuild -P $dir index
+    echo "build done"
+    # abuild-sign -k ~/.abuild/info@bastothemax.nl-666178c1.rsa -p ~/.abuild/info@bastothemax.nl-666178c1.rsa.pub $(pwd)/../
+
+    echo "list pkg"
+    abuild -P $dir listpkg -v
+    
+    abuild -P $dir index -v
+    echo "index done"
 
     echo "Built $1!"
 fi
