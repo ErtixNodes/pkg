@@ -10,7 +10,7 @@ else
 
     cd $1
     
-    abuild -P $dir build
+    abuild -P $dir/repo build
     echo "build done"
 
     echo "Apk:"
