@@ -6,23 +6,24 @@ dest="$dir"
 if [ "$1" == "./repo" ] || [ "$1" == "./repo/x86_64" ]; then
     echo "Ignoring $1...."
 else
+    name=$(git rev-parse --short HEAD)
     echo "Now in $dir!"
     echo "Processing directory: $1"
 
     cd $1
     
     # abuild -P $dest -k build
-    abuild -P $dest
+    abuild -D $name -P $dest
     echo "build done"
 
-    abuild -P $dest package
+    abuild -D $name -P $dest package
 
     echo "list pkg"
-    abuild -P $dest listpkg
+    abuild -D $name -P $dest listpkg
     echo "list done"
 
     echo "indexing..."
-    abuild -P $dest index
+    abuild -D $name -P $dest index
     echo "index done"
 
     echo "Built $1!"
