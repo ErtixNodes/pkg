@@ -1,0 +1,2 @@
+repo/x86_64/bttmtest-1.0.0-r0.apk
+repo/x86_64/bttmtest-1.0.0-r1.apk
