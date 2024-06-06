@@ -2,3 +2,4 @@ src
 pkg
 tmp
 .env
+packageversion.txt

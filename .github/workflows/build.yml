@@ -49,7 +49,9 @@ jobs:
         run: chown -R root $(pwd)
 
       - name: Generate package list
-        run: find repo/x86_64  -type f -name "*.apk" > packagelist.txt
+        run: |
+          echo "# Version: $(cat packageversion.txt)" > packagelist.txt
+          find repo/x86_64  -type f -name "*.apk" >> packagelist.txt
 
       - name: Commit new packages
         run: |
