@@ -27,7 +27,7 @@ jobs:
           cp ./info@bastothemax.nl-666178c1.rsa.pub /home/foo/.abuild/
           cp ./info@bastothemax.nl-666178c1.rsa.pub /etc/apk/keys/
           echo "${{ secrets.APORTS_PRIVATE_KEY }}" > /home/foo/.abuild/info@bastothemax.nl-666178c1.rsa
-          echo "PACKAGER_PRIVKEY=/home/foo/.abuild/bttm-6650b009.rsa" > /home/foo/.abuild/abuild.conf
+          echo "PACKAGER_PRIVKEY=/home/foo/.abuild/info@bastothemax.nl-666178c1.rsa" > /home/foo/.abuild/abuild.conf
           chmod 777 /home/foo/.abuild/info@bastothemax.nl-666178c1.rsa
           chmod 777 /etc/apk/keys/info@bastothemax.nl-666178c1.rsa.pub
           chmod 777 /home/foo/.abuild/info@bastothemax.nl-666178c1.rsa.pub
