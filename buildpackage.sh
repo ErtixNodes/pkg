@@ -11,15 +11,17 @@ else
 
     cd $1
     
-    abuild -P $dest build
+    abuild -P $dest -k build
     echo "build done"
+
+    abuild -P $dest -k package
 
     # abuild-sign -k ~/.abuild/info@bastothemax.nl-666178c1.rsa -p ~/.abuild/info@bastothemax.nl-666178c1.rsa.pub $(pwd)/../
 
     echo "list pkg"
-    abuild -P $dest listpkg
+    abuild -v -P $dest listpkg
     
-    abuild -P $dest index
+    abuild -v -P $dest index
     echo "index done"
 
     echo "Built $1!"
