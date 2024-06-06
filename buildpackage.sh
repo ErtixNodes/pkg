@@ -11,7 +11,8 @@ else
 
     cd $1
     
-    abuild -P $dest -k build
+    # abuild -P $dest -k build
+    abuild -P $dest -k
     echo "build done"
 
     abuild -P $dest -k package
