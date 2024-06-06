@@ -4,19 +4,11 @@ pkgrel=0
 pkgdesc="Test program for ertixnodes"
 url="https://ertixnodes.xyz"
 arch="all"
-options=""
+options="!check"
 license="custom"
 subpackages=""
 makedepends=""
 
 build() {
 	echo "Building at $(pwd) with $pkgdir"
-}
-
-package() {
-	echo "Pack"
-}
-
-check() {
-	echo "Everything works!"
 }
