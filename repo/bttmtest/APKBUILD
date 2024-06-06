@@ -1,19 +1,21 @@
 # Maintainer: ErtixNodes <info@bastothemax.nl>
 pkgname=bttmtest
+pkgdesc="This is a sample package for the ErtixNodes alpine repo."
+
 pkgver=1.0.0
 pkgrel=1
-pkgdesc="Test program for ertixnodes"
+
 url="https://ertixnodes.xyz"
 arch="all"
 options="!check"
 license="custom"
 
 build() {
+	echo "Building not needed."
 	echo "Build done!"
 }
 package() {
 	mkdir -p "$pkgdir"
 }
 
-install="$pkgname.pre-install $pkgname.pre-upgrade $pkgname.post-upgrade
-	$pkgname.post-install $pkgname.pre-deinstall $pkgname.post-deinstall"
+install="$pkgname.pre-install $pkgname.pre-upgrade $pkgname.post-upgrade $pkgname.post-install $pkgname.pre-deinstall $pkgname.post-deinstall"
