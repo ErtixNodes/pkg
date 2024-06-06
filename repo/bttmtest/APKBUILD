@@ -3,7 +3,7 @@
 # Contributor: Natanael Copa <ncopa@alpinelinux.org>
 pkgname=bttmtest
 pkgver=1.0.0
-pkgrel=0
+pkgrel=1
 pkgdesc="Test program for ertixnodes"
 url="https://ertixnodes.xyz"
 arch="all"
