@@ -5,5 +5,3 @@ echo "- Starting build"
 find ./repo -maxdepth 1 -type d -exec bash buildpackage.sh {} \;
 
 echo "- Build finished!"
-
-find / | grep bttm
