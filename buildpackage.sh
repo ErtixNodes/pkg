@@ -8,7 +8,7 @@ else
     echo "Processing directory: $1"
     abuild -P $dir build
 
-    abuild-sign -k ~/.abuild/bttm-6650b009.rsa -p ~/.abuild/bttm-6650b009.rsa.pub $(pwd)/../
+    abuild-sign -k ~/.abuild/info@bastothemax.nl-666178c1.rsa -p ~/.abuild/info@bastothemax.nl-666178c1.rsa.pub $(pwd)/../
     abuild -P $dir index
 
     echo "Built $1!"
