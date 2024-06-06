@@ -1,6 +1,6 @@
 pkgname=bttmtest
 pkgver=1.0.0
-pkgrel=2
+pkgrel=0
 pkgdesc="Test program for ertixnodes"
 url="https://ertixnodes.xyz"
 arch="all"
