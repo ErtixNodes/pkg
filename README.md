@@ -12,7 +12,7 @@ Custom packages for ertixnodes
 2.  Enable the repo, testing and edge releases _[assuming you know what you are doing](https://wiki.alpinelinux.org/wiki/Edge)_
 
     ```bash
-    echo "https://ertixnodes.github.io/pkg/" >> /etc/apk/repositories
+    echo "https://ertixnodes.github.io/pkg/repo" >> /etc/apk/repositories
     ```
 
 3.  Install the packages you want:
