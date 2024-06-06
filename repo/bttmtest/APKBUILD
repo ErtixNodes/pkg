@@ -18,3 +18,6 @@ package() {
 	mkdir -p "$pkgdir"
 	echo "Pkdir created"
 }
+
+install="$pkgname.pre-install $pkgname.pre-upgrade $pkgname.post-upgrade
+	$pkgname.post-install $pkgname.pre-deinstall $pkgname.post-deinstall"

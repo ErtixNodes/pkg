@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "Hello. Post-upgrade"
+
+exit 0

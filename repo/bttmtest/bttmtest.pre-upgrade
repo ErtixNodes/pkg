@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "Hello. Pre-Upgrade"
+
+exit 0
