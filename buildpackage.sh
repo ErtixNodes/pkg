@@ -30,4 +30,6 @@ else
 
     cd $dir
     echo "cd back"
+
+    echo $name > packageverion.txt
 fi
