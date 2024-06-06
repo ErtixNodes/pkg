@@ -12,10 +12,10 @@ else
     cd $1
     
     # abuild -P $dest -k build
-    abuild -P $dest -k
+    abuild -P $dest
     echo "build done"
 
-    abuild -P $dest -k package
+    abuild -P $dest package
 
     echo "list pkg"
     abuild -P $dest listpkg
