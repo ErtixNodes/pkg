@@ -29,7 +29,8 @@ else
     echo "Built $1!"
 
     cd $dir
-    echo "cd back"
+    echo "cd back to $dir"
 
+    echo "Version: $name"
     echo $name > packageverion.txt
 fi
