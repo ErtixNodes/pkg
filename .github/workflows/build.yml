@@ -48,6 +48,9 @@ jobs:
       - name: Revert ownership to git
         run: chown -R root $(pwd)
 
+      - name: Generate package list
+        run: find repo/x86_64  -type f -name "*.apk" > packagelist.txt
+
       - name: Commit new packages
         run: |
           git config --global user.name 'github-actions[bot]'
