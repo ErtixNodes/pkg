@@ -6,9 +6,10 @@ url="https://ertixnodes.xyz"
 arch="all"
 options="!check"
 license="custom"
-subpackages=""
-makedepends=""
 
 build() {
 	echo "Building at $(pwd) with $pkgdir"
+}
+package() {
+	echo "Package (not needed)"
 }
