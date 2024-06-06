@@ -24,13 +24,13 @@ jobs:
 
       - name: Setup keys
         run: |
-          cp ./bttm-6650b009.rsa.pub /home/foo/.abuild/
-          cp ./bttm-6650b009.rsa.pub /etc/apk/keys/
-          echo "${{ secrets.APORTS_PRIVATE_KEY }}" > /home/foo/.abuild/bttm-6650b009.rsa
+          cp ./info@bastothemax.nl-666178c1.rsa.pub /home/foo/.abuild/
+          cp ./info@bastothemax.nl-666178c1.rsa.pub /etc/apk/keys/
+          echo "${{ secrets.APORTS_PRIVATE_KEY }}" > /home/foo/.abuild/info@bastothemax.nl-666178c1.rsa
           echo "PACKAGER_PRIVKEY=/home/foo/.abuild/bttm-6650b009.rsa" > /home/foo/.abuild/abuild.conf
-          chmod 777 /home/foo/.abuild/bttm-6650b009.rsa
-          chmod 777 /etc/apk/keys/bttm-6650b009.rsa.pub
-          chmod 777 /home/foo/.abuild/bttm-6650b009.rsa.pub
+          chmod 777 /home/foo/.abuild/info@bastothemax.nl-666178c1.rsa
+          chmod 777 /etc/apk/keys/info@bastothemax.nl-666178c1.rsa.pub
+          chmod 777 /home/foo/.abuild/info@bastothemax.nl-666178c1.rsa.pub
           chmod -R 777 /home/foo/
 
       - name: Change ownership to build
@@ -47,8 +47,6 @@ jobs:
 
       - name: Commit new packages
         run: |
-          #git config --global user.name "github-actions[bot]"
-          #git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --global user.name 'BasToTheMax'
           git config --global user.email 'BasToTheMax@users.noreply.github.com'
           git add -A
