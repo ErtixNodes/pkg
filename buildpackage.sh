@@ -19,9 +19,11 @@ else
     # abuild-sign -k ~/.abuild/info@bastothemax.nl-666178c1.rsa -p ~/.abuild/info@bastothemax.nl-666178c1.rsa.pub $(pwd)/../
 
     echo "list pkg"
-    abuild -v -P $dest listpkg
-    
-    abuild -v -P $dest index
+    abuild -P $dest listpkg
+    echo "list done"
+
+    echo "indexing..."
+    abuild -P $dest index
     echo "index done"
 
     echo "Built $1!"
