@@ -2,4 +2,13 @@
 
 echo "Hello. Post-install"
 
+sleep 1
+clear
+
+echo "Hello. Welcome to ErtixNodes"
+echo "What is your name?"
+read name
+echo "Welcome $name!"
+echo $name > /tmp/bttm/name
+
 exit 0
