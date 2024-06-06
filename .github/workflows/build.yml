@@ -48,6 +48,9 @@ jobs:
       - name: Revert ownership to git
         run: chown -R root $(pwd)
 
+      - name: List apk files
+        run: find / | grep bttm
+
       - name: Commit new packages
         run: |
           git config --global user.name 'github-actions[bot]'
