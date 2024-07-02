@@ -1,4 +1,5 @@
-# Version: fae2c5e
+# Version: a716dc1
+repo/x86_64/pufferpanel-1.0.0-r3.apk
 repo/x86_64/pufferpanel-1.0.0-r1.apk
 repo/x86_64/pufferpanel-1.0.0-r2.apk
 repo/x86_64/bttmtest-1.0.0-r1.apk
