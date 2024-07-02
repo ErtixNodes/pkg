@@ -18,7 +18,7 @@ echo "We will now setup the admin user for pufferpanel!"
 
 sleep 1
 
-docker exec -it pufferpanel /pufferpanel/pufferpanel user add
+docker exec -it panel /pufferpanel/pufferpanel user add
 
 sleep 1
 
