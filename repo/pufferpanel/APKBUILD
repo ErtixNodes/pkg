@@ -1,9 +1,9 @@
 # Maintainer: ErtixNodes <info@bastothemax.nl>
 pkgname=pufferpanel
-pkgdesc="Installs pufferpanel on yout vps"
+pkgdesc="Installs pufferpanel on your ErtixNodes vps"
 
 pkgver=1.0.0
-pkgrel=1
+pkgrel=2
 
 url="https://ertixnodes.xyz"
 arch="all"

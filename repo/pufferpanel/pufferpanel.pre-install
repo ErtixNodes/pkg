@@ -5,4 +5,11 @@ echo "Hello. Pre-install"
 mkdir -p /var/lib/pufferpanel
 mkdir -p /etc/pufferpanel
 
+rc-update add docker
+service docker start
+
+sleep 3
+
+echo "> Started docker!"
+
 exit 0
