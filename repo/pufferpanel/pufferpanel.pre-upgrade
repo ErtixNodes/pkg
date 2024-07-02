@@ -1,0 +1,16 @@
+#!/bin/sh
+
+echo "Hello. Pre-Upgrade"
+
+sleep 1
+
+echo "Updating puffer..."
+docker image pull pufferpanel/pufferpanel:latest
+
+docker container stop panel
+
+docker container rm panel
+
+docker run -d -ti --name panel --network host -v /etc/pufferpanel:/etc/pufferpanel -v /var/lib/pufferpanel:/var/lib/pufferpanel -v /var/run/docker.sock:/var/run/docker.sock --restart=on-failure pufferpanel/pufferpanel:latest
+
+exit 0

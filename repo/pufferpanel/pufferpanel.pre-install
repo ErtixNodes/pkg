@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo "Hello. Pre-install"
+
+mkdir -p /var/lib/pufferpanel
+mkdir -p /etc/pufferpanel
+
+exit 0

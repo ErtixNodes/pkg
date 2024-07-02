@@ -1,0 +1,31 @@
+#!/bin/sh
+
+echo "Hello. Post-install"
+
+sleep 1
+clear
+
+docker run -d -ti --name panel --network host -v /etc/pufferpanel:/etc/pufferpanel -v /var/lib/pufferpanel:/var/lib/pufferpanel -v /var/run/docker.sock:/var/run/docker.sock --restart=on-failure pufferpanel/pufferpanel:latest
+
+echo
+echo
+echo
+echo "---------------------------------"
+
+echo "Hello. Welcome to ErtixNodes Pufferpanel installation!"
+sleep 1
+echo "We will now setup the admin user for pufferpanel!"
+
+sleep 1
+
+docker exec -it pufferpanel /pufferpanel/pufferpanel user add
+
+sleep 1
+
+echo "User created"
+sleep 0.5
+echo ""
+sleep 0.5
+echo "> Please forward port 8080 using the bot and open the external port in your browser."
+
+exit 0
