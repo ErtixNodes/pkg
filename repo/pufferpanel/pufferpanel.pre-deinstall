@@ -2,4 +2,10 @@
 
 echo "Hello. Pre-remove"
 
+docker container stop panel
+
+docker container rm panel
+
+docker image rm pufferpanel/pufferpanel:latest
+
 exit 0
