@@ -13,7 +13,7 @@ else
     cd $1
     
     # abuild -P $dest -k build
-    abuild -D $name -P $dest
+    abuild -D $name -P $dest -r
     echo "build done"
 
     abuild -D $name -P $dest package
